@@ -104,13 +104,6 @@ const HomePage = {
     container.innerHTML += exploreItemTemplate(province);
     });
 
-    // window.addEventListener("scroll", function() {
-    //     if (window.scrollY > heroElement.offsetHeight) {
-    //         header.classList.add("scrolled");
-    //     } else {
-    //         header.classList.remove("scrolled");
-    //     }
-    // });
 
       // Function to check the scroll position and add/remove the "scrolled" class
   const checkScrollPosition = () => {
