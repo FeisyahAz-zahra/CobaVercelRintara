@@ -5,7 +5,6 @@ import '../styles/home-page.css';
 import '../styles/responsive.css';
 import './components/app-bar';
 import './components/hero-element';
-import './components/skip-to-content';
 import './components/footer';
 
 import App from './views/app';
