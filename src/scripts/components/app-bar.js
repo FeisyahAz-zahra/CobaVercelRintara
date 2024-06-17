@@ -8,7 +8,7 @@ class AppBar extends HTMLElement {
             <div class="app-bar">
 
             
-            <a href="#/" class="app-bar-logo">
+            <a href="/" class="app-bar-logo">
             <h1>RinTara</h1>
             </a>
             
@@ -16,7 +16,7 @@ class AppBar extends HTMLElement {
 
             <nav id="navigationDrawer" class="app-bar-navigation">
                 <ul>
-                    <li><a href="#/">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="#/explore">Explore</a></li>
                     <li><a href="#/about-us">About Us</a></li>
                 </ul>

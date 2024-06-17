@@ -28,7 +28,7 @@ class FooterBar extends HTMLElement {
       <div class="bottom">
         <div class="nav">
           <ul>
-            <li><a href="#/">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#/explore">Explore</a></li>
             <li><a href="#/about-us">About</a></li>
           </ul>
