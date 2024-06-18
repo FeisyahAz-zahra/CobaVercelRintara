@@ -103,6 +103,10 @@ Province
     margin: 5px 0;
   }
 
+  .history{
+    padding: 0px 30px 20px 30px;
+}
+
   .province-search-bar {
     display: flex;
     justify-content: flex-end;
@@ -174,4 +178,9 @@ Province
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     white-space: normal;
+}
+
+.notFoundArticle{
+    font: 1rem;
+    text-align: center;
 }

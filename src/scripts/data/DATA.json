@@ -12,7 +12,7 @@
             "tokoh": "Sultan Iskandar Muda, Cut Nyak Dhien",
             "budaya":[
                 {
-                    "url" : "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/01/10150442/popmama.jpg",
+                    "url" : "https://blog-static.mamikos.com/wp-content/uploads/2021/08/Gambar-Utama-3.jpg",
                     "title" : "Tari Saman"
                     
                 },
@@ -36,7 +36,7 @@
         {
             "id": 2,
             "title": "Sumatera Utara",
-            "image": "https://bobobox.com/blog/wp-content//uploads/elementor/thumbs/Danau-Toba-Sumatera-Utara-1-1-q5nt7tz3pxxnxectplrko0cnl1b7c6l8lqmlbiemlg.jpg",
+            "image": "https://asset.kompas.com/crops/ump8WgfAI6E2-11-d_ooN5IdowQ=/118x0:914x531/750x500/data/photo/2020/07/08/5f055faa7709f.jpeg",
             "description": "Sumatera Utara, sebuah provinsi yang terletak di ujung utara Pulau Sumatera, Indonesia, menampilkan pesona alam yang memikat dan kekayaan budaya yang menawan. Dengan ibukota yang bersemayam di kota Medan, provinsi ini memperlihatkan beragam panorama, mulai dari dataran rendah yang subur hingga pegunungan yang menjulang tinggi.",
             "ibuKota": "Kota Medan",
             "luas": "72.981,23 km2",
@@ -108,7 +108,7 @@
             "tokoh": "Prof. Dr. Mohammad Hatta, Tuanku Imam Bonjol",
             "budaya": [
                 {
-                    "url" : "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2021/09/24174252/CaL0a17WEAIrJiw-810x540.jpg",
+                    "url" : "https://www.kabarsumbar.com/wp-content/uploads/2021/05/Foto-Ilustrasi-tari-piring-di.jpg",
                     "title" : "Tari Piring"
                 },
                 {
@@ -258,7 +258,7 @@
             "id": 9,
             "title": "Lampung",
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tugu_Siger.jpg",
-            "description": "",
+            "description": "Provinsi Lampung adalah salah satu provinsi di Indonesia yang terletak di bagian selatan Pulau Sumatera. Provinsi ini berbatasan langsung dengan Laut Jawa di sebelah timur, Selat Sunda di selatan, serta Provinsi Bengkulu dan Sumatera Selatan di sebelah barat dan utara.",
             "ibuKota": "Bandar Lampung",
             "luas": "33,575 km²",
             "bahasa": "Dialek Nyow (Pepadun) ",
@@ -271,7 +271,7 @@
                     "title" : "Tari Bedana"
                 },
                 {
-                    "url" : "23/01/06/nuwou-sesat-rumah-adat-lampung.png?w=-..986I",
+                    "url" : "https://akcdn.detik.net.id/visual/2021/04/18/bangunan-khas-adat-lampung-yang-berada-di-tengah-perkotaan_43.jpeg?w=720&q=90",
                     "title" : "Nuwou Sesat"                   
                 },
                 {
@@ -289,7 +289,7 @@
         {
             "id": 10,
             "title": "Bangka Belitung",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aE0o2xHccaeb-chx5d1DNVQp3f34YedYAw&s",
+            "image": "https://media.istockphoto.com/id/1083299796/photo/indonesia-bangka-belitung-province-belitung-island.webp?b=1&s=170667a&w=0&k=20&c=kU4EHCFeKnL-YB3IhENEP43pDrEZClLsrFujSi_d1d8=",
             "description": "Provinsi Bangka Belitung adalah sebuah provinsi di Indonesia yang terletak di sebelah timur Sumatra. Terdiri dari dua pulau utama, yaitu Pulau Bangka dan Pulau Belitung, provinsi ini dikenal akan keindahan pantainya dan kekayaan alamnya, terutama tambang timah yang melimpah.",
             "ibuKota": "Pangkal Pinang",
             "luas": "16,171 km²",
@@ -390,7 +390,7 @@
         {
             "id": 13,
             "title": "Kalimantan Selatan",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAAfEDSiXzb1_nY2DwPrabQzdpnHCjqjwcuA&s",
+            "image": "https://asset.kompas.com/crops/C7HTZr0RDRNxKxVmAN6-mNLo2Bg=/0x0:1000x667/750x500/data/photo/2022/06/26/62b758316726d.jpg",
             "description": "Provinsi ini juga terkenal dengan keindahan alamnya, termasuk sungai-sungai besar seperti Sungai Barito dan kawasan pegunungan Meratus yang menawarkan pemandangan alam yang memukau. Ekonomi Kalimantan Selatan banyak didukung oleh sektor pertambangan, perkebunan, dan pariwisata.",
             "ibuKota": "Banjarbaru",
             "luas": "38.321 km²",
@@ -400,7 +400,7 @@
             "budaya": 
             [
                 {
-                    "url" : "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/09/21100510/image001-23-1140x790.png",
+                    "url" : "https://www.infopublik.id/resources/album/bulan-november-2019/117.jpg",
                     "title" : "Tari Baksa Kembang"
                 },
                 {
@@ -484,6 +484,36 @@
                
             ]
             
+        },
+        {
+            "id": 20,
+            "title": "Daerah Istimewa Yogyakarta",
+            "image": "https://images.unsplash.com/photo-1552035191-f10bd9fbf35e?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "description": "Yogyakarta, sering disebut sebagai Jogja, adalah sebuah provinsi di Indonesia yang terletak di bagian tengah Pulau Jawa. Dikenal sebagai pusat kebudayaan dan pendidikan, Yogyakarta memiliki kekayaan sejarah, tradisi, dan warisan budaya yang kuat.",
+            "ibuKota": "Daerah IstimewaYogyakarta",
+            "luas": "32.82 km²",
+            "bahasa": "Bahasa Jawa",
+            "situs": "Keraton Yogyakarta, Museum Benteng Vredeburg",
+            "tokoh": "Ki Hajar Dewantara, KH Ahmad Dahlan",
+            "budaya": 
+            [
+                {
+                    "url" : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKgI8EJ7r4383hNXeqm5tx2kz-im-qzSf4w8Evj0QJLNd3URFxLc0AKHba7-9_uGB6CEAKB9twQjw9asKi_2DR-tp_ZKk4nED15ySnXmg7Nu38nKZc1Z4yrX8m9otQ9hNqDa6LE5M21Yo/w0/prambanan.jpg",
+                    "title" : "Sendratari Ramayana"
+                },
+                {
+                    "url" : "https://4.bp.blogspot.com/-Q9b5QpOPu_8/WLf3N70VlEI/AAAAAAAAAN8/qUQj5j-pGIUMC7FlbN0xjWcj8NOzvOw8wCLcB/s640/budaya-sekatenan.jpg",
+                    "title" : "Sekatenan"                   
+                },
+                {
+                    "url" : "https://3.bp.blogspot.com/-_cY-Rvvo-rQ/WLf3PoKftpI/AAAAAAAAAOE/MWAb-DFcbLM--H4_EkgOdZs8u7PX00y_QCLcB/s640/karawitan-jogja.jpg",
+                    "title" : "Karawitan"                   
+                },
+                {
+                    "url" : "https://2.bp.blogspot.com/-gif1ZboHT4w/WLf3Uxi8OpI/AAAAAAAAAOY/pzP1eax8urgGKUYMgIMVwT-mZmO5j1AfwCLcB/s640/wayang-kulit.jpg",
+                    "title" : "Wayang Kulit"                   
+                }              
+            ]
         }
     ]      
 }

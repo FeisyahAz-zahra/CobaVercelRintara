@@ -1,6 +1,7 @@
 import initSlider from '../../utils/scrollHandler';
-import { exploreItemTemplate } from '../template/template-creator';
+import { exploreItemTemplate, recentItemTemplate } from '../template/template-creator';
 import data from '../../data/DATA.json';
+import dataArticle from '../../data/artikel.json';
 
 const HomePage = {
   async render() {
@@ -9,51 +10,6 @@ const HomePage = {
     <div class="recently-add">
             <h2>Recently Added Articles</h2>
             <div class="recent-content">
-
-                <a href="" class="recent-item">
-                    <div class="recent-item-img">
-                        <img src="./images/volcano.jpg" alt="">
-                    </div>
-                    <div class="recent-item-content">
-                        <h3>Judul</h3>
-                        <p>Lorem ipsum Lorem ipsum 
-                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
-                    </div>
-                </a>
-
-                <a href="" class="recent-item">
-                    <div class="recent-item-img">
-                        <img src="./images/volcano.jpg" alt="">
-                    </div>
-                    <div class="recent-item-content">
-                        <h3>Judul</h3>
-                        <p>Lorem ipsum Lorem ipsum 
-                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
-                    </div>
-                </a>
-
-                <a href="" class="recent-item">
-                    <div class="recent-item-img">
-                        <img src="./images/volcano.jpg" alt="">
-                    </div>
-                    <div class="recent-item-content">
-                        <h3>Judul</h3>
-                        <p>Lorem ipsum Lorem ipsum 
-                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
-                    </div>
-                </a>
-
-
-                <a href="" class="recent-item">
-                    <div class="recent-item-img">
-                        <img src="./images/volcano.jpg" alt="">
-                    </div>
-                    <div class="recent-item-content">
-                        <h3>Judul</h3>
-                        <p>Lorem ipsum Lorem ipsum 
-                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
-                    </div>
-                </a>
 
             </div>
         </div>
@@ -98,11 +54,16 @@ const HomePage = {
     const header = document.querySelector('.app-header');
     const heroElement = document.querySelector('.hero-element');
     const container = document.querySelector('.explore-content');
+    const recentItemContainer = document.querySelector('.recent-content');
 
     window.scrollTo(0, 0);
     data.provinces.slice(0, 8).forEach((province) => {
       container.innerHTML += exploreItemTemplate(province);
     });
+
+    dataArticle.articles.slice(0, 4).forEach((article) => {
+        recentItemContainer.innerHTML += recentItemTemplate(article);
+      });
 
     // Function to check the scroll position and add/remove the "scrolled" class
     const checkScrollPosition = () => {

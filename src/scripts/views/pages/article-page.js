@@ -1,38 +1,62 @@
+// import articleData from "../../data/artikel.json";
+// import { articleContentTemplate } from "../template/template-creator";
+
+// const ArticlePage = {
+//   async render() {
+//     return `
+//       <div class="article-page">
+//       </div>
+//         `;
+//   },
+
+//   async afterRender() {
+//     window.scrollTo(0, 0);
+//     const header = document.querySelector('.app-header');
+//     const articleContainer = document.querySelector('.article-page');
+
+//     if (window.scrollY === 0) {
+//       header.classList.add('scrolled');
+//     } else {
+//       header.classList.add('scrolled');
+//     }
+
+//     articleContainer.innerHTML = articleContentTemplate(articleData);
+//   },
+// };
+
+// export default ArticlePage;
+
+
+import UrlParser from '../../routes/url-parser';
+import articleData from "../../data/artikel.json";
+import { articleContentTemplate } from "../template/template-creator";
+
 const ArticlePage = {
   async render() {
     return `
       <div class="article-page">
-        <div class="article-content">
-      <h1>Sejarah Candi Borobudur</h1>
-      <img
-        src="./images/teacher.jpg"
-        alt="Candi Borobudur"
-        class="featured-image"
-      />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        pellentesque velit id velit et aliquet. Etiam cursus quam quis orci
-        pulvinar, eget mattis velit urna. Duis faucibus justo nec arcu rutrum, a
-        duae mi facilisis. Phasellus odio nulla, aliquet eget vulputate ut,
-        pretium id neque. Fusce blandit tellus nec, tincidunt lorem. Aliquam
-        ultricies orci ac mi fringilla, dignissim massa ac justo. Integer
-        tincidunt blandit aliquet. Etiam pharetra libero a dui pretium,
-        fringilla tincidunt urna et convallis. Nulla facilisi.
-      </p>
-    </div>
       </div>
-        `;
+    `;
   },
 
   async afterRender() {
     window.scrollTo(0, 0);
     const header = document.querySelector('.app-header');
-    // header.classList.add("scrolled");
+    const articleContainer = document.querySelector('.article-page');
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const articleId = url.id;
+    const article = articleData.articles.find((article) => article.id.toString() === articleId);
 
     if (window.scrollY === 0) {
       header.classList.add('scrolled');
     } else {
       header.classList.add('scrolled');
+    }
+
+    if (article) {
+      articleContainer.innerHTML = articleContentTemplate(article);
+    } else {
+      articleContainer.innerHTML = '<p>Artikel tidak ditemukan.</p>';
     }
   },
 };

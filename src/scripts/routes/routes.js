@@ -9,7 +9,7 @@ const routes = {
   '/explore': ExplorePage,
   '/about-us': AboutUs,
   '/province-detail/:id': ProvinceDetail,
-  '/article': ArticlePage,
+  '/article/:id': ArticlePage,
 };
 
 export default routes;

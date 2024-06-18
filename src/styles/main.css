@@ -190,7 +190,6 @@ hero
 .search-section{
   display: flex;
   justify-content: start;
-  flex-direction: column;
   gap: 10px;
 }
 

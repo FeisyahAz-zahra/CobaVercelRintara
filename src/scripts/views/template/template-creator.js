@@ -1,4 +1,13 @@
-const recentItemTemplate = () => '';
+const recentItemTemplate = (data) => `
+              <a href="/article/${data.id}" class="recent-item">
+                    <div class="recent-item-img">
+                        <img src="${data.img}" alt="">
+                    </div>
+                    <div class="recent-item-content">
+                        <h3>${data.title}</h3>
+                        <p>${data.body}</p>
+                    </div>
+                </a>`;
 
 const exploreItemTemplate = (data) => `
         <a href="#/province-detail/${data.id}" class="explore-items">
@@ -51,28 +60,35 @@ const provinceDetailTemplate = (data) => `
         </div>
       </section>
   
-      <section class="history">
-        <h2>Sejarah Terkait</h2>
-        <div class="province-search-bar">
-          <input type="text" placeholder="Search" />
-          <button>Search</button>
-        </div>
-        <div class="article-container">
-          <div class="article-item">
-            <a href="#/article">
-              <h3>Judul Artikel</h3>
-            </a>
-            <p class="release-date">Release date: xx-xx-xxxx</p>
-            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum quasi, rerum voluptate quae excepturi distinctio cum blanditiis, nobis praesentium voluptas obcaecati necessitatibus deserunt optio laboriosam beatae? Corporis consectetur magni officia quod quibusdam minus officiis rerum, itaque fuga nam expedita excepturi aperiam eligendi. Quia enim quo neque vitae voluptates. Mollitia numquam accusantium minus quam eius delectus harum, ex ipsam nihil aut nisi natus commodi fuga aliquam recusandae perferendis ullam quasi officiis? Architecto adipisci dolore, voluptate quasi facere, inventore officia alias possimus deserunt consequuntur corrupti perspiciatis doloribus. Maiores quis, dolore sunt et doloremque quos, deleniti placeat vero assumenda delectus repudiandae? Perspiciatis.</h4>
-          </div>
-        </div>
-      </section>
     </div>
   `;
+
+  const historyArticleTemplate = (data) => `
+  <div class="article-item">
+            <a href="#/article/${data.id}">
+              <h3>${data.title}</h3>
+            </a>
+            <p class="release-date">Release date: xx-xx-xxxx</p>
+            <h4>${data.body}</h4>
+          </div>
+          `;
+
+  const articleContentTemplate = (data) => `
+  <div class="article-content">
+      <h1>${data.title}</h1>
+      <img
+        src="${data.img}"
+        alt="${data.title}"
+        class="featured-image"
+      />
+      <p>${data.body}</p>
+    </div>`;
 
 export {
   recentItemTemplate,
   exploreItemTemplate,
   kategoriTemplate,
   provinceDetailTemplate,
+  articleContentTemplate,
+  historyArticleTemplate,
 };

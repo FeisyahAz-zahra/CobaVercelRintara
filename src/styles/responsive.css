@@ -345,6 +345,7 @@
     .kategori{
       grid-template-columns: repeat(1, 1fr);
     }
+
     .search-section {
       justify-content: center;
     }
@@ -411,9 +412,14 @@ footer-bar img {
       font-size: 13px;
     }
   }
-.recent-item{
-  width: 95%;
-}
+
+  .search-bar input{
+    max-width: 95%;
+  }
+
+  .recent-item{
+    width: 95%;
+  }
  .overlay-text{
   h1{
     font-size: 20px;
