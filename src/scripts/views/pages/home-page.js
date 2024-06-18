@@ -12,7 +12,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -23,7 +23,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -34,7 +34,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -46,7 +46,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -68,7 +68,7 @@ const HomePage = {
                 penuh warna. Seni tradisional, seperti ukiran kayu, batik, dan tenun ikat, dipertahankan oleh para pengrajin yang meneruskan keterampilan 
                 ini dari generasi ke generasi. Gastronomi Indonesia, dengan rempah-rempah yang khas dan variasi masakan lokal, menawarkan palet rasa yang 
                 memanjakan lidah dan menggugah selera. Ini adalah tanah dimana tradisi dan modernitas bertemu, menciptakan harmoni yang dinamis dan menarik.</p>
-                <img src="./images/volcano-with-mist-sunset 2.jpg" alt="about-indonesia-picture">
+                <img src="./images/volcano.jpg" alt="about-indonesia-picture">
             </div>
         </div>
 
