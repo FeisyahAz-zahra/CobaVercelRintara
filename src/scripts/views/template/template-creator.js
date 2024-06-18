@@ -1,5 +1,5 @@
 const recentItemTemplate = (data) => `
-              <a href="/article/${data.id}" class="recent-item">
+              <a href="#/article/${data.id}" class="recent-item">
                     <div class="recent-item-img">
                         <img src="${data.img}" alt="">
                     </div>
