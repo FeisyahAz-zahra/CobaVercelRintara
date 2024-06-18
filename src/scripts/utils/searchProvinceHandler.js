@@ -46,4 +46,4 @@ function makeSearch() {
   }
 }
 
-export default makeSearch();
+export { makeSearch };

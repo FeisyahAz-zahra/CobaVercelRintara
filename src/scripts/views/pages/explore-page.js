@@ -1,6 +1,6 @@
 import { kategoriTemplate } from '../template/template-creator';
 import data from '../../data/DATA.json';
-import makeSearch from '../../utils/searchProvinceHandler';
+import {makeSearch} from '../../utils/searchProvinceHandler';
 
 const ExplorePage = {
   async render() {
