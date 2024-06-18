@@ -7,7 +7,7 @@ class FooterBar extends HTMLElement {
     this.innerHTML = `
     <div class="upper">
         <div class="logo">
-            <img src="../icon/logo.png" alt="Logo">
+            <img class="footer-logo" src="../icon/logo.png" alt="Logo">
             <p>Jelajahi Sejarah dan Budaya Indonesia</p>
         </div>
           <div class="social-media">

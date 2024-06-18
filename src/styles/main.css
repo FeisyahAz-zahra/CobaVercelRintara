@@ -33,8 +33,10 @@ h2{
     box-shadow: none;
     background-color: transparent;
     color: white;
-    
+}
 
+.appbar-logo{
+  width: 140px;
 }
 
 .app-header.scrolled{
@@ -52,12 +54,6 @@ h2{
     padding: 10px 20px 10px 20px;
 }
 
-.app-bar-logo{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-}
-
 #hamburger {
     font-size: 40px;
     text-decoration: none;
@@ -67,7 +63,7 @@ h2{
     background-color: transparent;
     min-height: 44px;
     min-width: 44px;
-    padding: 10px 10px 10px 20px;
+    padding: 10px;
   }
 
 
@@ -117,6 +113,7 @@ h2{
 .app-bar-navigation ul li a:hover {
   font-weight: bold;
 }
+
 .user-login{
     display: flex;
     flex-direction: row;

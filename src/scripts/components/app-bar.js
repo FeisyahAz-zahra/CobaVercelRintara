@@ -10,7 +10,8 @@ class AppBar extends HTMLElement {
             
             <a href="/" class="app-bar-logo">
             
-            <h1>RinTara</h1>
+            <img class="appbar-logo" src="../icon/app-logo.png" alt="Logo">
+            
             </a>
             
             <button type="button" id="hamburger" aria-label="navigation-menu" tabindex="0">☰</button>
