@@ -2,6 +2,7 @@ import { provinceDetailTemplate, historyArticleTemplate } from '../template/temp
 import UrlParser from '../../routes/url-parser';
 import data from '../../data/DATA.json';
 import dataArticles from '../../data/artikel.json';
+import { makeSearchArticle } from '../../utils/searchArticleHandler';
 
 const ProvinceDetail = {
   async render() {
@@ -10,10 +11,13 @@ const ProvinceDetail = {
        <section class="history">
         <h2>Sejarah Terkait</h2>
         <div class="province-search-bar">
-          <input type="text" placeholder="Search" />
-          <button>Search</button>
+          <input type="text" id="inputArticle" placeholder="Search" />
+          <button id="search-btn">Search</button>
         </div>
-        <div class="article-container"></div>
+        <div class="article-container">
+          <div class="search-result"></div>
+          <div class="article-list"></div>
+        </div>
       </section>
     `;
   },
@@ -22,7 +26,7 @@ const ProvinceDetail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const header = document.querySelector('.app-header');
     const container = document.querySelector('.province-detail');
-    const articleContainer = document.querySelector('.article-container');
+    const articleContainer = document.querySelector('.article-list');
 
     window.scrollTo(0, 0);
 
@@ -56,11 +60,21 @@ const ProvinceDetail = {
       }
     };
 
+    document.getElementById('search-btn').addEventListener('click', () => makeSearchArticle(articlesData));
+    document.getElementById('inputArticle').addEventListener('input', () => makeSearchArticle(articlesData));
+    document.getElementById('inputArticle').addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+        makeSearchArticle(articlesData);
+      }
+    });
+
     // Initial check in case the page is already scrolled
     checkScrollPosition();
 
     // Add the scroll event listener
     window.addEventListener('scroll', checkScrollPosition);
+
+    
   },
 };
 
