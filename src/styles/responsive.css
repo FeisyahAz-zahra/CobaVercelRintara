@@ -395,7 +395,18 @@ footer-bar img {
 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
+  .hero-content{
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+.recent-item{
+  width: 95%;
+}
  .overlay-text{
   h1{
     font-size: 20px;
@@ -438,4 +449,5 @@ footer-bar img {
  .culture-card{
   width: 90%;
  }
+
 }

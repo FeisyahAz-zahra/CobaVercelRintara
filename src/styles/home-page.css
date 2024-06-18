@@ -23,6 +23,7 @@
 .about-content p{
     font-size: 1.3rem;
     padding: 15px;
+    text-align: justify;
 }
 
 .about-content img{

@@ -484,42 +484,6 @@
                
             ]
             
-        },
-
-
-
-        
-        {
-            "id": 16,
-            "title": "",
-            "image": "",
-            "description": "",
-            "ibuKota": "",
-            "luas": "",
-            "bahasa": "",
-            "situs": "",
-            "tokoh": "",
-            "budaya": 
-            [
-                {
-                    "url" : "",
-                    "title" : ""
-                },
-                {
-                    "url" : "",
-                    "title" : ""                   
-                },
-                {
-                    "url" : "",
-                    "title" : ""                   
-                },
-                {
-                    "url" : "",
-                    "title" : ""                   
-                }              
-               
-            ]
-            
         }
     ]      
 }
