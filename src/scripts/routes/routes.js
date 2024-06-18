@@ -8,8 +8,8 @@ const routes = {
   '/': HomePage,
   '/explore': ExplorePage,
   '/about-us': AboutUs,
-  '/province-detail/:id' : ProvinceDetail,
-  '/article' : ArticlePage,
+  '/province-detail/:id': ProvinceDetail,
+  '/article': ArticlePage,
 };
 
 export default routes;

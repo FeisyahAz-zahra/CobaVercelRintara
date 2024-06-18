@@ -1,5 +1,5 @@
-import initSlider from "../../utils/scrollHandler";
-import { exploreItemTemplate } from "../template/template-creator";
+import initSlider from '../../utils/scrollHandler';
+import { exploreItemTemplate } from '../template/template-creator';
 import data from '../../data/DATA.json';
 
 const HomePage = {
@@ -95,37 +95,34 @@ const HomePage = {
   },
 
   async afterRender() {
-    const header = document.querySelector(".app-header");
-    const heroElement = document.querySelector(".hero-element");
+    const header = document.querySelector('.app-header');
+    const heroElement = document.querySelector('.hero-element');
     const container = document.querySelector('.explore-content');
 
     window.scrollTo(0, 0);
     data.provinces.slice(0, 8).forEach((province) => {
-    container.innerHTML += exploreItemTemplate(province);
+      container.innerHTML += exploreItemTemplate(province);
     });
 
+    // Function to check the scroll position and add/remove the "scrolled" class
+    const checkScrollPosition = () => {
+      const heroBottom = heroElement.getBoundingClientRect().bottom + window.scrollY;
 
-      // Function to check the scroll position and add/remove the "scrolled" class
-  const checkScrollPosition = () => {
-    const heroBottom = heroElement.getBoundingClientRect().bottom + window.scrollY;
-    
-    if (window.scrollY >= heroBottom) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  };
-  
-  // Initial check in case the page is already scrolled
-  checkScrollPosition();
-  
-  // Add the scroll event listener
-  window.addEventListener('scroll', checkScrollPosition);
+      if (window.scrollY >= heroBottom) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
 
-    window.addEventListener("resize", initSlider());
-    window.addEventListener("load", initSlider());
- 
-    
+    // Initial check in case the page is already scrolled
+    checkScrollPosition();
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', checkScrollPosition);
+
+    window.addEventListener('resize', initSlider());
+    window.addEventListener('load', initSlider());
   },
 };
 

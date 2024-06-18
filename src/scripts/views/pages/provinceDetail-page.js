@@ -1,4 +1,4 @@
-import { provinceDetailTemplate } from "../template/template-creator";
+import { provinceDetailTemplate } from '../template/template-creator';
 import UrlParser from '../../routes/url-parser';
 import data from '../../data/DATA.json';
 
@@ -11,14 +11,14 @@ const ProvinceDetail = {
 
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const header = document.querySelector(".app-header");
+    const header = document.querySelector('.app-header');
     const container = document.querySelector('.province-detail');
 
     window.scrollTo(0, 0);
 
     // Ambil id provinsi dari URL
     const provinceId = url.id;
-    const provinceData = data.provinces.find(province => province.id.toString() === provinceId);
+    const provinceData = data.provinces.find((province) => province.id.toString() === provinceId);
 
     if (!provinceData) {
       container.innerHTML = '<p>Province not found!</p>';
@@ -29,13 +29,13 @@ const ProvinceDetail = {
 
     // Function to check the scroll position and add/remove the "scrolled" class
     const checkScrollPosition = () => {
-      const provinceHeaderContent = document.querySelector(".header-content");
+      const provinceHeaderContent = document.querySelector('.header-content');
       if (provinceHeaderContent) {
         const elementBottom = provinceHeaderContent.getBoundingClientRect().bottom + window.scrollY;
         if (window.scrollY >= elementBottom) {
-          header.classList.add("scrolled");
+          header.classList.add('scrolled');
         } else {
-          header.classList.remove("scrolled");
+          header.classList.remove('scrolled');
         }
       }
     };

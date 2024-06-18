@@ -1,6 +1,6 @@
 const ArticlePage = {
-    async render() {
-      return `
+  async render() {
+    return `
       <div class="article-page">
         <div class="article-content">
       <h1>Sejarah Candi Borobudur</h1>
@@ -22,21 +22,19 @@ const ArticlePage = {
     </div>
       </div>
         `;
-    },
-  
-    async afterRender() {
-      window.scrollTo(0, 0);
-      const header = document.querySelector(".app-header");
-      // header.classList.add("scrolled");
+  },
 
-      if (window.scrollY === 0) {
-        header.classList.add("scrolled");
-      }else{
-        header.classList.add("scrolled");
-      }
+  async afterRender() {
+    window.scrollTo(0, 0);
+    const header = document.querySelector('.app-header');
+    // header.classList.add("scrolled");
 
-    },
-  };
-  
-  export default ArticlePage;
-  
+    if (window.scrollY === 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.add('scrolled');
+    }
+  },
+};
+
+export default ArticlePage;

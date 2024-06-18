@@ -1,6 +1,6 @@
 const AboutUs = {
-    async render() {
-      return `
+  async render() {
+    return `
       <div class="aboutUs">
       <div class="jumbotron">
       <h1>About Us</h1>
@@ -62,15 +62,13 @@ const AboutUs = {
   </section>
       </div>
         `;
-    },
-  
-    async afterRender() {
-      window.scrollTo(0, 0);
-      const header = document.querySelector(".app-header");
-      header.classList.add("scrolled");
+  },
 
-    },
-  };
-  
-  export default AboutUs;
-  
+  async afterRender() {
+    window.scrollTo(0, 0);
+    const header = document.querySelector('.app-header');
+    header.classList.add('scrolled');
+  },
+};
+
+export default AboutUs;

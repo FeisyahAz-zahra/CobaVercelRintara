@@ -1,6 +1,6 @@
-import { kategoriTemplate } from "../template/template-creator";
+import { kategoriTemplate } from '../template/template-creator';
 import data from '../../data/DATA.json';
-import { makeSearch } from "../../utils/searchProvinceHandler";
+import makeSearch from '../../utils/searchProvinceHandler';
 
 const ExplorePage = {
   async render() {
@@ -22,38 +22,37 @@ const ExplorePage = {
 
   async afterRender() {
     window.scrollTo(0, 0);
-      const header = document.querySelector(".app-header");
-      header.classList.add("scrolled");
+    const header = document.querySelector('.app-header');
+    header.classList.add('scrolled');
 
-      const container = document.querySelector('.kategori');
-      data.provinces.forEach((province) => {
-        container.innerHTML += kategoriTemplate(province);
-      });
+    const container = document.querySelector('.kategori');
+    data.provinces.forEach((province) => {
+      container.innerHTML += kategoriTemplate(province);
+    });
 
     // Menambahkan event listener untuk navigasi ke halaman detail provinsi
-      container.addEventListener("click", async function(event) {
-      if (event.target.classList.contains("kategori-items")) {
-          event.preventDefault();
-          const provinceId = event.target.getAttribute("href").split('/').pop();
-          await this.navigateToProvinceDetail(provinceId);
-          }
-      }.bind(this));
-        
-      // document.getElementById("search-btn").addEventListener("click", makeSearch);
-      document.getElementById("inputProvince").addEventListener("input", makeSearch);
-      document.getElementById("inputProvince").addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-          makeSearch();
-        }
-      });
+    container.addEventListener('click', async (event) => {
+      if (event.target.classList.contains('kategori-items')) {
+        event.preventDefault();
+        const provinceId = event.target.getAttribute('href').split('/').pop();
+        await this.navigateToProvinceDetail(provinceId);
+      }
+    });
+
+    // document.getElementById("search-btn").addEventListener("click", makeSearch);
+    document.getElementById('inputProvince').addEventListener('input', makeSearch);
+    document.getElementById('inputProvince').addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+        makeSearch();
+      }
+    });
   },
-    
+
   async navigateToProvinceDetail(provinceId) {
     const url = `#/province-detail/${provinceId}`;
     window.location.hash = url;
   },
-    
-        
+
 };
 
 export default ExplorePage;
