@@ -86,14 +86,6 @@ Province
     object-fit: cover;
     object-position: center; 
 }
-
-/* .explore-content .explore-item-img {
-    background-color: burlywood;
-    width: 280px;
-    height: 390px;
-    border-radius: 10px;
-    overflow: hidden;
-} */
   
   .culture-info {
     position: absolute;
@@ -183,15 +175,3 @@ Province
     -webkit-line-clamp: 3;
     white-space: normal;
 }
-
-.favorite {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-    cursor: pointer;
-    font-size: 35px;
-}
-  
-.favorite:hover {
-    color: red;
-}  

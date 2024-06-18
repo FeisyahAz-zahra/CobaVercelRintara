@@ -59,7 +59,6 @@ const provinceDetailTemplate = (data) => `
         </div>
         <div class="article-container">
           <div class="article-item">
-            <span class="favorite">&#x2661;</span>
             <a href="#/article">
               <h3>Judul Artikel</h3>
             </a>
