@@ -395,7 +395,7 @@ footer-bar img {
 
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   .hero-content{
     h1{
       font-size: 4rem;

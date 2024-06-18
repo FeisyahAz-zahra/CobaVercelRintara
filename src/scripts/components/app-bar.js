@@ -9,6 +9,7 @@ class AppBar extends HTMLElement {
 
             
             <a href="/" class="app-bar-logo">
+            
             <h1>RinTara</h1>
             </a>
             
